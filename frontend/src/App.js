@@ -1,5 +1,7 @@
 import './App.css';
 import Counter from './components/Counter';
+import 'bootstrap/dist/css/bootstrap.css';
+
 import Hello from './components/function_component/Hello';
 import HelloWorld from './components/HelloWorld';
 import Post from './components/Post';
@@ -24,7 +26,7 @@ function App() {
           Hello World from React
         </p> */}
 
-      <Counter initialValue={4} />
+      <Counter initialValue = {10} incValue = {2} />
         
         
       </header>

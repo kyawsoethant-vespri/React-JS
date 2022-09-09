@@ -8,27 +8,37 @@ export default class Counter extends React.Component{
         this.state = {
             counter : this.props.initialValue
         }
+
+        this.increment = this.increment.bind(this);
+        this.decrement = this.decrement.bind(this);
     }
 
-    // constructor(){ //for State
+    // constructor(){
     //     super();
 
     //     this.state = {
     //         counter : 0
     //     }
     // }
+        
+    // increment()
+    // {
+    //     this.setState(
+    //         { counter : this.state.counter + 1}
+    //     )
+    // }
 
     increment()
     {
-        this.setState(
-            {counter : this.state.counter + 1}
-        )
+        this.setState((state,props) => (
+            { counter : this.state.counter + this.props.incValue }
+            ))
     }
 
     decrement()
     {
         this.setState(
-            {counter : this.state.counter - 1}
+            { counter : this.state.counter - 1 }
         )
     }
 
@@ -38,11 +48,11 @@ export default class Counter extends React.Component{
             <div>
                 Counter &nbsp;
 
-                <button type="btn" onClick={() => this.increment()}> + </button>
+                <button type="btn" className="btn btn-primary" onClick={ this.increment }> + </button>
 
                     &nbsp; {this.state.counter} &nbsp;
 
-                <button type="btn" onClick={() => this.decrement()}> - </button>
+                <button type="btn" className="btn btn-primary" onClick={ this.decrement }> - </button>
             </div>
         )
     }
