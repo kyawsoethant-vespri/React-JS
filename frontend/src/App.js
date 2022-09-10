@@ -7,6 +7,7 @@ import HelloWorld from './components/HelloWorld';
 import Post from './components/Post';
 import Greeting from './components/function_component/Greeting';
 import ListDemo from './components/ListDemo';
+import FormDemo from './components/FormDemo';
 
 function App() {
 
@@ -30,11 +31,9 @@ function App() {
           {/*<Counter initalValue={4} incValue={2}/>*/}
           {/*<Greeting isLoggedIn={false}/>*/}
          {/* <ListDemo/>*/}
-         {/* <FormDemo/>*/}
-          {/*<BasicForm/>*/}
-         {/* <YupForm/>*/}
-        {/*  <ToDoList/>*/}
-          <WelcomeDialog/>
+         
+         <FormDemo />
+         
       </header>
     </div>
   );
