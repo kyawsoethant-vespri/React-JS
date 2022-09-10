@@ -8,6 +8,8 @@ import Post from './components/Post';
 import Greeting from './components/function_component/Greeting';
 import ListDemo from './components/ListDemo';
 import FormDemo from './components/FormDemo';
+import BasicForm from './components/formik/BasicForm';
+import YupForm from './components/formik/YupForm';
 
 function App() {
 
@@ -27,12 +29,16 @@ function App() {
 
        {/* <HelloWorld  obj={obj}/>
           <Hello/>
-       <Post post={post}></Post>*/}
+          <Post post={post}></Post>*/}
           {/*<Counter initalValue={4} incValue={2}/>*/}
           {/*<Greeting isLoggedIn={false}/>*/}
          {/* <ListDemo/>*/}
          
-         <FormDemo />
+         {/* <FormDemo /> */}
+         
+         {/* <BasicForm/> */}
+
+         <YupForm/>
          
       </header>
     </div>
