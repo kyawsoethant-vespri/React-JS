@@ -10,6 +10,7 @@ import ListDemo from './components/ListDemo';
 import FormDemo from './components/FormDemo';
 import BasicForm from './components/formik/BasicForm';
 import YupForm from './components/formik/YupForm';
+import ToDoList from './components/ToDoList';
 
 function App() {
 
@@ -38,7 +39,9 @@ function App() {
          
          {/* <BasicForm/> */}
 
-         <YupForm/>
+         {/* <YupForm/> */}
+
+         <ToDoList/>
          
       </header>
     </div>
