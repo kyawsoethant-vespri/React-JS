@@ -11,6 +11,7 @@ import FormDemo from './components/FormDemo';
 import BasicForm from './components/formik/BasicForm';
 import YupForm from './components/formik/YupForm';
 import ToDoList from './components/ToDoList';
+import WelcomeDialog from './components/WelcomeDialog';
 
 function App() {
 
@@ -41,7 +42,9 @@ function App() {
 
          {/* <YupForm/> */}
 
-         <ToDoList/>
+         {/* <ToDoList/> */}
+
+         <WelcomeDialog/>
          
       </header>
     </div>
