@@ -1,3 +1,5 @@
+import React, { Fragment } from "react";
+
 import './App.css';
 import Counter from './components/Counter';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,6 +14,16 @@ import BasicForm from './components/formik/BasicForm';
 import YupForm from './components/formik/YupForm';
 import ToDoList from './components/ToDoList';
 import WelcomeDialog from './components/WelcomeDialog';
+import FocusDemo from './components/FocusDemo';
+import OuterClickExample from './components/function_component/OuterClickExample';
+import ContextDemo from './components/context/ContextDemo';
+import ThemeContext from "./components/context/ThemeContext";
+import FragmentDemo from "./components/fragment/FragmentDemo";
+
+// import("./OurMath").then(math => {
+//   console.log("Add ",math.add);
+//   console.log(math.add(16, 26));
+// });
 
 function App() {
 
@@ -44,7 +56,17 @@ function App() {
 
          {/* <ToDoList/> */}
 
-         <WelcomeDialog/>
+         {/* <WelcomeDialog/> */}
+
+         {/* <FocusDemo/> */}
+
+         {/* <OuterClickExample/> */}
+
+        {/* <ThemeContext.Provider value="dark">
+              <ContextDemo/>
+        </ThemeContext.Provider> */}
+
+         <FragmentDemo/>
          
       </header>
     </div>
