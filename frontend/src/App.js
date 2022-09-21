@@ -19,11 +19,14 @@ import OuterClickExample from './components/function_component/OuterClickExample
 import ContextDemo from './components/context/ContextDemo';
 import ThemeContext from "./components/context/ThemeContext";
 import FragmentDemo from "./components/fragment/FragmentDemo";
+import logProps from "./components/hoc/logProps";
 
 // import("./OurMath").then(math => {
 //   console.log("Add ",math.add);
 //   console.log(math.add(16, 26));
 // });
+
+let LogComponent = logProps(WelcomeDialog);
 
 function App() {
 
@@ -35,6 +38,7 @@ function App() {
     text : "How are you !",
     profile : obj
   }
+
 
   return (
     <div className="App">
@@ -66,7 +70,9 @@ function App() {
               <ContextDemo/>
         </ThemeContext.Provider> */}
 
-         <FragmentDemo/>
+         {/* <FragmentDemo/> */}
+
+         <LogComponent loading={false}/>
          
       </header>
     </div>
