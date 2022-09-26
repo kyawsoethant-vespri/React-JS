@@ -20,6 +20,11 @@ import ContextDemo from './components/context/ContextDemo';
 import ThemeContext from "./components/context/ThemeContext";
 import FragmentDemo from "./components/fragment/FragmentDemo";
 import logProps from "./components/hoc/logProps";
+import RunTimeTypeDemo from "./components/runtime_type/RunTimeTypeDemo";
+import RepeatDemo from "./components/function_as_child/RepeatDemo";
+import { Modal } from "bootstrap";
+import RenderProperty from "./components/render-property/RenderProperty";
+import PortalDemo from "./components/portal/PortalDemo";
 
 // import("./OurMath").then(math => {
 //   console.log("Add ",math.add);
@@ -72,11 +77,23 @@ function App() {
 
          {/* <FragmentDemo/> */}
 
-         <LogComponent loading={false}/>
+         {/* <LogComponent loading={false}/> */}
+
+         {/* <RunTimeTypeDemo/> */}
+
+         {/* <RepeatDemo/> */}
+        
+        {/* <RenderProperty/> */}
+
+        <PortalDemo/>
          
       </header>
+
+
+      
+         
     </div>
   );
 }
 
-export default App;;
+export default App;
