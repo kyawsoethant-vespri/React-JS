@@ -25,6 +25,17 @@ import RepeatDemo from "./components/function_as_child/RepeatDemo";
 import { Modal } from "bootstrap";
 import RenderProperty from "./components/render-property/RenderProperty";
 import PortalDemo from "./components/portal/PortalDemo";
+import FunctionCounter from "./components/function_component/FunctionCounter";
+import ToDoListHook from "./components/function_component/hook/ToDoListHook";
+import EffectHookDemo from "./components/function_component/hook/EffectHookDemo";
+import UseReducerDemo from "./components/function_component/hook/ReducerHookDemo";
+import ReducerHookDemo from "./components/function_component/hook/ReducerHookDemo";
+import ToDoListWithReducer from "./components/function_component/hook/ToDoListWithReducer";
+import MemoHookDemo from "./components/function_component/hook/MemoHookDemo";
+import RenderingExample from "./components/function_component/hook/RenderingExample";
+import UseRefDemo from "./components/function_component/hook/UseRefDemo";
+import UseTransitionDemo from "./components/function_component/hook/UseTransitionDemo";
+import UseIdDemo from "./components/function_component/hook/UseIdDemo";
 
 // import("./OurMath").then(math => {
 //   console.log("Add ",math.add);
@@ -48,6 +59,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+
         {/*  <HelloWorld obj={obj} />*/}
 
        {/* <HelloWorld  obj={obj}/>
@@ -85,13 +98,30 @@ function App() {
         
         {/* <RenderProperty/> */}
 
-        <PortalDemo/>
-         
+        {/* <PortalDemo/> */}
+
+        {/* <FunctionCounter/> */}
+
+        {/* <ToDoListHook/> */}
+
+        {/* <EffectHookDemo/> */}
+
+        {/* <ReducerHookDemo/> */}
+
+        {/*<ToDoListWithReducer/>*/}
+
+        {/*<MemoHookDemo/>*/}
+
+        {/*<RenderingExample/>*/}
+
+        {/*<UseRefDemo/>*/}
+
+        {/*<UseTransitionDemo/>*/}
+
+        <UseIdDemo/>
+
       </header>
 
-
-      
-         
     </div>
   );
 }
